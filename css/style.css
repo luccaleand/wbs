@@ -10,7 +10,7 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #333;
-	background-color: #f2f2f2;
+	background-color:  #b3b3b3;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px;
-	background-color: #e67e22;
+	background-color: #333e48;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,11 +35,15 @@ header {
 nav ul {
 	display: flex;
 	margin-right: 15px;
-}
+	list-style: none;
+	}
+
 
 nav li {
 	margin-left: 30px;
 	color: rgba(128, 128, 128, 0.805);
+	text-decoration: none;
+
 }
 
 nav a {
@@ -59,12 +63,11 @@ main {
 }
 
 .banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  align-items: center;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 
@@ -82,6 +85,8 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
+	text-decoration: none;
+
 }
 
 .horarios li {
@@ -90,6 +95,8 @@ main {
 	padding: 20px;
 	background-color: #fff;
 	box-shadow: 0 2px 2px rgba(0.5, 0, 0, 0.5);
+	text-decoration: none;
+
 }
 
 .horarios h3 {
@@ -106,45 +113,15 @@ main {
 .horarios ul ul {
 	margin-top: 20px;
 	font-size: 14px;
-}
+	text-decoration: none;
 
-.horarios button {
-	margin-top: 20px;
-	padding: 10px 20px;
-	background-color: #e67e22;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	font-size: 16px;
-	font-weight: bold;
-	cursor: pointer;
-}
-
-.horarios button:hover {
-	background-color: #d35400;
 }
 
 footer {
-	background-color: #e67e22;
+	background-color:#ed6516;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
 	box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
 }
 
-footer div {
-	margin-bottom: 10px;
-	font-size: 14px;
-}
-
-footer .endereco {
-	font-weight: bold;
-}
-
-.horarios2 li {
-	width: calc(50% - 20px);
-	margin: 10px;
-	padding: 20px;
-	background-color: #fa0000;
-	box-shadow: 0 2px 2px rgba(0.5, 0, 0, 0.5);
-}
