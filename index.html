@@ -3,13 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Cine Nog</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Mundo Overwatch</title>
+  <link rel="stylesheet" type="text/css" href="../wbs/css/style.css">
 </head>
 
 <style>
-  .flip-card img {}
-
   .flip-card {
     background-color: transparent;
     width: 300px;
@@ -45,8 +43,8 @@
   }
 
   .flip-card-front {
-    background-color: green;
-    color: purple;
+    background-color: #ffffff00;
+    color: black;
   }
 
   .flip-card-back {
@@ -75,12 +73,6 @@
     padding: 0 10px;
   }
 
-
-
-
-
-
-
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -88,13 +80,42 @@
     text-align: center;
     background-color: #f1f1f1;
   }
+
+
+
+
+
+
+  .nav-link-content {
+    align-items: center;
+    border-radius: var(--navbar-button-border-radius);
+    box-sizing: border-box;
+    display: flex;
+    min-height: var(--size-600);
+    overflow: hidden;
+    text-align: left;
+    transition: var(--transition-hover);
+  }
 </style>
 
 <body>
+
+
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" part="icon blz-icon">
+    <path
+      d="M13.8994 13.901C15.2258 12.5745 16.8005 11.5223 18.5335 10.8044C20.2666 10.0865 22.124 9.71702 23.9999 9.71702C25.8757 9.71702 27.7332 10.0865 29.4663 10.8044C31.1993 11.5223 32.774 12.5745 34.1004 13.901L38.1426 9.85874C36.2854 8.00131 34.0806 6.5279 31.654 5.52265C29.2274 4.5174 26.6265 4 23.9999 4C21.3733 4 18.7724 4.5174 16.3458 5.52265C13.9192 6.5279 11.7143 8.00131 9.85718 9.85874L13.8994 13.901Z"
+      fill="#ED6516"></path>
+    <path
+      d="M39.3118 11.1345L35.2491 15.1972C37.03 17.4739 38.0784 20.2371 38.2561 23.122C38.4338 26.007 37.7323 28.878 36.2444 31.3559L28.8906 24.0007L24.8849 14.5878H24.8644V27.3108L32.8028 35.2491C30.2895 37.2148 27.1907 38.2828 24 38.2828C20.8093 38.2828 17.7105 37.2148 15.1973 35.2491L23.1356 27.3108V14.636L19.1094 24.0007L11.7542 31.3559C10.267 28.8776 9.56614 26.0067 9.74408 23.1218C9.92201 20.237 10.9704 17.474 12.7509 15.1972L8.68818 11.1345C6.23794 14.0502 4.67109 17.6048 4.17186 21.3805C3.67263 25.1561 4.26178 28.9958 5.87003 32.4481C7.47829 35.9004 10.0388 38.8217 13.2505 40.8686C16.4622 42.9155 20.1915 44.0029 24 44.0029C27.8085 44.0029 31.5379 42.9155 34.7495 40.8686C37.9612 38.8217 40.5217 35.9004 42.13 32.4481C43.7382 28.9958 44.3274 25.1561 43.8282 21.3805C43.3289 17.6048 41.7621 14.0502 39.3118 11.1345V11.1345Z"
+      fill="#333E48"></path>
+  </svg>
+
+
   <header>
     <div class="logo"><img src="logo.png"></div>
     <nav>
       <ul>
+        <li><a href="cadastro.html"><strong><i>CADASTRO</i></strong></a></li>
         <li><a href="#"><strong><i>SOBRE NÓS</i></strong></a></li>
         <li><a href="login.html"><strong><i>LOGOUT</i></strong></a></li>
       </ul>
@@ -112,11 +133,13 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <a href="https://overwatch.blizzard.com/pt-br/heroes/tracer/">
-                  <img src="tracer2.png" alt="Tracer - Imagem da personagem" style="width:300px;height:300px;">
+                  <img src="../wbs/fotos/58d8e51ab029c853d825146924e9258c.jpg" alt="Tracer - Imagem da personagem"
+                    style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
                 <a href="https://overwatch.blizzard.com/pt-br/heroes/tracer/">
-                  <img src="tracer1.png" alt="Tracer - Imagem da personagem" style="width:300px;height:300px;">
+                  <img src="../wbs/fotos/Tracer.png" alt="Tracer - Imagem da personagem"
+                    style="width:300px;height:400px;">
                 </a>
               </div>
             </div>
@@ -124,9 +147,10 @@
           <h2>Tracer - A heroína veloz da Overwatch</h2>
           <p>Tracer, uma piloto britânica que se tornou uma das heroínas mais icônicas da Overwatch. Com sua
             habilidade única de manipular o tempo e se teletransportar, Tracer é uma peça chave para combater as ameaças
-            globais que assolam o mundo.</p> 
-            <br><img src="tracer-icon.png" alt="Tracer - Imagem da personagem" style="width:50px;height:50px; float:left; margin-right:10px;">
-            <blockquote>
+            globais que assolam o mundo.</p>
+          <br><img src="/fotos/tracer-icon.png" alt="Tracer - Imagem da personagem"
+            style="width:50px;height:50px; float:left; margin-right:10px;">
+          <blockquote>
             <p>"Não se preocupem queridos...a cavalaria chegou!"</p>
             <cite>Lena Oxton (Tracer)</cite>
           </blockquote><br>
@@ -136,70 +160,61 @@
             como morta. No entanto, sua habilidade de manipular o tempo a manteve presa em um loop temporal instável,
             tornando-a uma espécie de fantasma no tempo. Desde então, ela se juntou à Overwatch como uma heroína e tem
             sido uma peça chave para proteger o mundo contra ameaças globais.</p>
-
-
         </li>
+
         <li>
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="John-Wick-4-wallp.jpg" alt="Avatar" style="width:300px;height:300px;">
+                <img src="../wbs/fotos/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <img src="John-Wick-4-wallp-back.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                <img src="../wbs/fotos/mccree-2.jpeg" alt="Avatar" style="width:300px;height:300px;">
               </div>
             </div>
           </div>
-          <h3>JOHN WICK 4: BABA YAGA</h3>
-          <p>Classificação: 16 anos</p>
-          <p>Duração: 2h49min</p>
-          <ul>
-            <li>SALA 3<br><br>20:30</li>
-            <li>SALA 5<br><br>16:30 | 20:00</li>
-          </ul>
-          <button>Comprar ingressos</button>
+          <h2>Tracer - A heroína veloz da Overwatch</h2>
+          <p>Tracer, uma piloto britânica que se tornou uma das heroínas mais icônicas da Overwatch. Com sua
+            habilidade única de manipular o tempo e se teletransportar, Tracer é uma peça chave para combater as ameaças
+            globais que assolam o mundo.</p>
+          <br><img src="/fotos/tracer-icon.png" alt="Tracer - Imagem da personagem"
+            style="width:50px;height:50px; float:left; margin-right:10px;">
+          <blockquote>
+            <p>"Não se preocupem queridos...a cavalaria chegou!"</p>
+            <cite>Lena Oxton (Tracer)</cite>
+          </blockquote><br>
+          <p>Antes de se tornar Tracer, Lena trabalhou para a organização Overwatch como piloto de testes. Ela foi a
+            primeira pessoa a testar o avançado avião-caça experimental "Chronal Accelerator", que lhe permitiu
+            manipular o tempo e se teletransportar. Após um acidente que deixou seu dispositivo danificado, ela foi dada
+            como morta. No entanto, sua habilidade de manipular o tempo a manteve presa em um loop temporal instável,
+            tornando-a uma espécie de fantasma no tempo. Desde então, ela se juntou à Overwatch como uma heroína e tem
+            sido uma peça chave para proteger o mundo contra ameaças globais.</p>
         </li>
-        <li>
-          <h3>SHAZAM! FÚRIA DOS DEUSES</h3>
-          <p>Classificação: 12 anos</p>
-          <p>Duração: 2h10min</p>
-          <ul>
-            <li>SALA 5<br><br>14:00</li>
-          </ul>
-          <button>Comprar ingressos</button>
-        </li>
-        <li>
-          <h3>O EXORCISTA DO PAPA</h3>
-          <p>Classificação: 16 anos</p>
-          <p>Duração: 1h43min</p>
-          <ul>
-            <li>SALA 1<br><br>22:00</li>
-            <li>SALA 4<br><br>14:30 | 16:45 | 21:45</li>
-          </ul>
-          <button>Comprar ingressos</button>
-        </li>
-        <li style="width:auto;height:auto;">
-          <img src="brigitte.jpg" alt="Brigitte - Imagem da personagem" style="width:760px;height:300px;" >
-          <h2>Brigitte - A Escudeira de Combate</h2>
-          <p>Conheça Brigitte Lindholm, a escudeira de combate da Overwatch. Filha do famoso engenheiro Torbjörn
-            Lindholm, Brigitte cresceu rodeada de tecnologia e máquinas. Ela sempre sonhou em ser uma heroína como seus
-            mentores, Reinhardt e sua madrinha, a lendária mercenária Ana Amari.</p>
-            <br><img src="briggita-icon.png" alt="Brigitte - Imagem da personagem" style="width:50px;height:50px; float:left; margin-right:10px;">
-            <blockquote>
-              <p>"Eu nunca fico pronta...mas eu estou sempre pronta para lutar!"</p>
-              <cite>Brigitte Lindholm (Brigitte)</cite>
-            </blockquote><br>
-          <p>Como escudeira de combate, Brigitte é especialista em proteger seus aliados e incapacitar seus inimigos.
-            Equipada com um martelo e um escudo, ela pode dar golpes poderosos e ao mesmo tempo proteger seus aliados de
-            ataques inimigos. Sua habilidade especial, Barreira de Escudo, cria uma barreira de energia que bloqueia o
-            dano e cura seus aliados atrás dela.</p>
-          <p>Além disso, Brigitte também é uma heroína muito versátil, capaz de curar seus aliados com seu Kit de
-            Reparos e dar um impulso de velocidade com sua habilidade Corrida com Propulsor. Seu papel de suporte e
-            tanque faz dela uma escolha popular entre os jogadores que buscam equilibrar a equipe com uma personagem
-            versátil e resistente.</p>
-          <p>Com sua força, determinação e habilidades únicas, Brigitte Lindholm se tornou uma das heroínas mais
-            adoradas da Overwatch.</p>
-        </li>
+      </ul>
+
+      <li style="width:auto;height:auto;">
+        <img src="/fotos/briggita/brigitte.jpg" alt="Brigitte - Imagem da personagem" style="width:760px;height:300px;">
+        <h2>Brigitte - A Escudeira de Combate</h2>
+        <p>Conheça Brigitte Lindholm, a escudeira de combate da Overwatch. Filha do famoso engenheiro Torbjörn
+          Lindholm, Brigitte cresceu rodeada de tecnologia e máquinas. Ela sempre sonhou em ser uma heroína como seus
+          mentores, Reinhardt e sua madrinha, a lendária mercenária Ana Amari.</p>
+        <br><img src="/fotos/briggita/briggita-icon.png" alt="Brigitte - Imagem da personagem"
+          style="width:50px;height:50px; float:left; margin-right:10px;">
+        <blockquote>
+          <p>"Eu nunca fico pronta...mas eu estou sempre pronta para lutar!"</p>
+          <cite>Brigitte Lindholm (Brigitte)</cite>
+        </blockquote><br>
+        <p>Como escudeira de combate, Brigitte é especialista em proteger seus aliados e incapacitar seus inimigos.
+          Equipada com um martelo e um escudo, ela pode dar golpes poderosos e ao mesmo tempo proteger seus aliados de
+          ataques inimigos. Sua habilidade especial, Barreira de Escudo, cria uma barreira de energia que bloqueia o
+          dano e cura seus aliados atrás dela.</p>
+        <p>Além disso, Brigitte também é uma heroína muito versátil, capaz de curar seus aliados com seu Kit de
+          Reparos e dar um impulso de velocidade com sua habilidade Corrida com Propulsor. Seu papel de suporte e
+          tanque faz dela uma escolha popular entre os jogadores que buscam equilibrar a equipe com uma personagem
+          versátil e resistente.</p>
+        <p>Com sua força, determinação e habilidades únicas, Brigitte Lindholm se tornou uma das heroínas mais
+          adoradas da Overwatch.</p>
+      </li>
 
       </ul>
     </section>
@@ -212,5 +227,6 @@
     <div class="rodape"><strong>Copyright &copy 2023</strong></div>
   </footer>
 </body>
+<!--https://overwatchers.com.br/herois-de-overwatch/icon-mccree/-->
 
 </html>
